@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CinemaTicket</string>
+    <string name="description">With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes</string>
+    <string name="hour">2h 23m</string>
+    <string name="rate">6.9/10</string>
+    <string name="imdb">IMDb</string>
+    <string name="precent">75%</string>
+    <string name="rotten_tomatoes">Rotten Tomatoes</string>
+    <string name="rate_value">7/10</string>
+    <string name="ign">IGN</string>
+    <string name="movie">John Wick: Chapter 4</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="adventure">Adventure</string>
+    <string name="now_showing">Now Showing</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="title">Fantastic Beasts: The\nSecrets of Dumbledore</string>
+    <string name="price">$300</string>
+    <string name="tickets">6 Tickets</string>
+    <string name="buy_tickets">Buy tickets</string>
+    <string name="available">Available</string>
+    <string name="taken">Taken</string>
+    <string name="selected">Selected</string>
+</resources>
