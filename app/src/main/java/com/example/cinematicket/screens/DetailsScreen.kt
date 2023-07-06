@@ -41,7 +41,7 @@ import com.example.cinematicket.ui.theme.composable.SpacerHorizontal8
 import com.example.cinematicket.ui.theme.composable.SpacerVertical16
 
 @Composable
-fun BookingScreen() {
+fun DetailsScreen() {
     ScreenContent()
 }
 
@@ -200,7 +200,7 @@ private fun BottomSheet(
                 lineHeight = 15.sp,
                 color = Black80,
                 fontFamily = Sans,
-                maxLines = 3,
+                maxLines = 4,
                 overflow = TextOverflow.Ellipsis
             )
 
@@ -223,5 +223,5 @@ private fun BottomSheet(
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun PreviewBookingScreen() {
-    BookingScreen()
+    DetailsScreen()
 }

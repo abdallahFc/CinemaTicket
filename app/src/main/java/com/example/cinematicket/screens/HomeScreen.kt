@@ -39,6 +39,7 @@ import androidx.compose.ui.util.lerp
 import coil.compose.rememberAsyncImagePainter
 import com.example.cinematicket.R
 import com.example.cinematicket.states.HomeUIState
+import com.example.cinematicket.ui.theme.Black40
 import com.example.cinematicket.ui.theme.Black80
 import com.example.cinematicket.ui.theme.Orange
 import com.example.cinematicket.ui.theme.Sans
@@ -136,17 +137,15 @@ private fun MoviePager(
         contentPadding = PaddingValues(horizontal = 32.dp),
         pageSpacing = 16.dp
     ) { page ->
-        val pageOffset = remember(pagerState) {
-            val currentPage = pagerState.currentPage
-            val currentPageOffset = pagerState.currentPageOffsetFraction
-            (page - currentPage + currentPageOffset).absoluteValue
-        }
+        val currentPage = pagerState.currentPage
+        val currentPageOffset = pagerState.currentPageOffsetFraction
+        val pageOffset = ((currentPage - page) + currentPageOffset).absoluteValue
         Card(
             modifier = Modifier
                 .aspectRatio(0.8f)
                 .graphicsLayer {
                     alpha = lerp(
-                        start = 0.5f,
+                        start = 0.7f,
                         stop = 1f,
                         fraction = 1f - pageOffset.coerceIn(0f, 1f)
                     )
@@ -173,9 +172,11 @@ private fun MovieContent() {
 
     IconButton(
         painter = R.drawable.clock,
-        iconTint = Black80,
+        iconTint = Black40,
         text = stringResource(R.string.hour),
-        textColor= Black80
+        textSize = 14,
+        backgroundColor = Color.Transparent,
+        textColor = Black80
     ) {}
 
     SpacerVertical16()

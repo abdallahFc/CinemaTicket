@@ -43,6 +43,7 @@ import com.example.cinematicket.ui.theme.composable.SpacerVertical16
 import com.example.cinematicket.states.ChairState
 import com.example.cinematicket.states.Day
 import com.example.cinematicket.states.TicketsUiState
+import com.example.cinematicket.ui.theme.Black
 
 @Composable
 fun TicketScreen() {
@@ -50,7 +51,7 @@ fun TicketScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF010101))
+            .background(Black)
             .padding(16.dp)
     ) {
         Header()
